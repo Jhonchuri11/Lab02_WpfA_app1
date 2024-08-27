@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp3.Conductores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Conductores" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Nombre de conductor" Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox x:Name="tipoDocumento" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+
+        <TextBlock Text="Licencia" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox x:Name="nroDocumento" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Transporte" Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox x:Name="placa" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.ColumnSpan="7" HorizontalAlignment="Center" Margin="10" >
+            <Button x:Name="guardarConductor" Margin="5"  Width="100" Content="
+        Registrar"/>
+            <Button x:Name="btnCancelar" Margin="5" Width="100" Content="
+Cancelar"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
