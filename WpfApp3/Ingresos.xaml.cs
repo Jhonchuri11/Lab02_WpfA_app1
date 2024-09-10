@@ -23,5 +23,11 @@ namespace WpfApp3
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            // para cerrar la venta
+            this.Close();
+        }
     }
 }

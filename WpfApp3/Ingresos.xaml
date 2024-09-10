@@ -25,8 +25,11 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Tipo de documento" Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
-        <TextBox x:Name="tipoDocumento" Grid.Row="0" Grid.Column="1" Margin="5"/>
-        <Label />
+        
+        <ComboBox x:Name="tipoDocumento2" Grid.Row="0" Grid.Column="1" Margin="5">
+            <ComboBoxItem Content="Opcion1"/>
+            <ComboBoxItem Content="Opcion2"/>
+        </ComboBox>
 
 
         <TextBlock Text="Numero de documento" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
@@ -54,7 +57,7 @@
             <Button x:Name="btnGuardar" Margin="5"  Width="100" Content="
         Registrar"/>
             <Button x:Name="btnCancelar" Margin="5" Width="100" Content="
-Cancelar"/>
+Cancelar" Click="btnCancelar_Click"/>
 
         </StackPanel>
     </Grid>
